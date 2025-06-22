@@ -1,0 +1,1 @@
+export  type ImageInit = string | ArrayBuffer | null | undefined
