@@ -8,13 +8,15 @@ export default function Home() {
 
     const imageData = (file: ChangeEvent<HTMLInputElement>) => {
 
+        // @ts-ignore
         const fileData = file?.target?.files[0]
 
         const reader = new FileReader()
         reader.readAsDataURL(fileData)
         reader.onload = async () => {
 
-         setRender(reader.result)
+         // @ts-ignore
+            setRender(reader.result)
         }
     }
 
